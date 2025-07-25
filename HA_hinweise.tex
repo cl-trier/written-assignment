@@ -1,0 +1,444 @@
+\documentclass[a4paper,oneside,DIV8,10pt]{scrartcl}
+  
+  \usepackage[a4paper, left=2cm, right=2cm, top=2cm]{geometry}
+  
+  \usepackage{ngerman}    % fuer die deutschen Trennmuster
+  \usepackage[utf8]{inputenc} % falls Sie Umlaute in den Quellen verwenden wollen
+  \usepackage[autostyle=true,german=quotes]{csquotes}
+  \usepackage{amsmath}   % enthaelt nuetzliche Makros fuer Mathematik
+  \usepackage{amsthm}    % fuer Saetze, Definitionen, Beweise, etc.
+  \usepackage{relsize}   % fuer \smaller 
+  \usepackage{paralist}
+  \usepackage{color, colortbl}
+  \usepackage{setspace}
+  \definecolor{grau}{gray}{0.9}
+  \definecolor{ex}{RGB}{0,0,140}
+  \renewcommand{\labelitemi}{--}             % aendert die Symbole bei unnumerierten Aufzaehlungen
+  \makeatletter                              % Fussnote ohne Symbol
+    \def\blfootnote{\xdef\@thefnmark{}\@footnotetext}
+  \newcommand{\handouttitle}[4]
+   {\begin{center}
+      \Large #4 \\
+      \small #2
+    \end{center}
+    \bigskip
+    \noindent
+    #1 \\ #3
+    \hfill
+    
+    \noindent
+    \rule{\linewidth}{.5pt}
+    
+    \@afterindentfalse\@afterheading
+   }
+  \makeatother
+  \renewcommand{\sectfont}{\normalfont}      
+
+\newcommand{\zit}[1]{%
+\fontfamily{phv}\selectfont #1\normalfont}
+
+\begin{document}
+\onehalfspacing
+  \handouttitle{Universität Trier}
+               {}
+               {Computerlinguistik}
+               {Leitfaden: Die wissenschaftliche Hausarbeit}
+
+\section{Formale Anforderungen und Aufbau einer wissenschaftliche Hausarbeit}
+
+    \subsection{Formale Anforderungen an die Hausarbeit}
+        \begin{compactitem}
+            \item DIN A4 einseitig
+            \item Schriftgröße 12pt, Fußnoten 10pt
+            \item keine ausgefallene Schriftart (meist Times New Roman)
+            \item Zeilenabstand 1,5-zeilig 
+            \item Blocksatz (auf korrekte Silbentrennung achten!)
+            \item Absatzkontrolle: Achten Sie darauf, dass die letzte Zeile 
+            eines Absatzes nicht erste Zeile einer neuen Seite ist und die 
+            erste Zeile eines Absatzes oder eine Kapitelüberschrift nicht 
+            am Seitenende steht 
+            \item Seitenabstände ca. 3cm
+            \item Seitenzahlen unten rechts oder zentriert
+            \item Eigenständigkeitserklärung (unterschrieben)
+        \end{compactitem}
+
+    \subsection{Formaler Aufbau der Hausarbeit}
+        \begin{compactitem}
+            \item Titelblatt
+            \item Inhaltsverzeichnis
+            \item Einleitung
+            \item Hauptteil
+            \item Schluss
+            \item Literaturverzeichnis
+            \item Anhang (evtl.)
+        \end{compactitem}
+
+    \subsubsection{Titelblatt}
+    Wichtig (u.a. für das korrekte Eintragen der Note) ist, dass die 
+        Hausarbeit (zusammen mit dem Studienverlaufsbeleg) eindeutig 
+        einem Modul bzw. einer Modulprüfung (und natürlich dem/der zu Prüfenden) 
+        zugeordnet werden kann. Unwichtig hingegen: Künstlerisch anspruchsvolle 
+        Gestaltung, lange, komplizierte Untertitel etc.
+        \begin{compactitem}
+            \item Universität, Fachbereich und Fach
+            \item Seminartitel, Semester, Abgabedatum
+            \item Name und Titel des/der Dozenten/Dozentin
+            \item Titel der Arbeit (bei Bachelor- und Masterarbeiten muss der 
+            Titel exakt dem beim Hochschulprüfungsamt angemeldeten Titel sein)
+            \item VerfasserIn: Name, Studienrichtung, Fachsemester, Matrikelnummer, Anschrift, E-Mail
+        \end{compactitem}
+
+    \subsubsection{Inhaltsverzeichnis}
+        \begin{compactitem}
+            \item enthält die Gliederung der Arbeit (Kapitelüberschriften) mit 
+            den Seitenzahlen des Beginns der einzelnen Kapitel
+            \item Titelblatt und Inhaltsverzeichnis werden bei der 
+            Seitennummerierung nicht mitgezählt, Seite 1 ist der Anfang der Einleitung
+            \item Seitenzahlen mit arabischen Zahlen 
+            \item Seiten mit Verzeichnissen (Abkürzungsverzeichnis etc.) vor der Einleitung 
+            (evtl. auch der Anhang) mit römischen Zahlen 
+            \item Gliederung mit arabischen oder römischen Zahlen
+            \item moderne Textverarbeitungs- oder Textsatzprogramme können 
+            bei richtiger Auszeichnung der Gliederung solche Verzeichnisse 
+            automatisch erstellen
+        \end{compactitem}
+
+
+    \subsubsection{Einleitung}
+        Zentrale Bestandteile der Einleitung sind:
+        \begin{compactitem}
+            \item Welches Thema bearbeite ich?
+            \item Welche inhaltlichen, methodischen und zeitlichen Grenzen
+            hat mein Untersuchungsgegenstand und warum?
+            \item Welche Leitfrage(n) habe ich für meine Arbeit? Welche 
+            Problemstellungen sind damit verbunden? 
+            \item Mit welcher Methode erschließe ich das Thema?
+            \item Überblick über die Forschungslage zum Thema: Vorstellung der 
+            Sekundärliteratur und deren relevante Themen; Gibt es eine Lücke
+            in der Forschungslage? Gibt es Forschungskontroversen?
+            \item Sinnvolle Einbettung der eigenen Fragestellung in das 
+            Forschungsgebiet; Relevanzfrage
+            \item Erläuterung und Begründung der Gliederung und des Vorgehens
+        \end{compactitem}
+
+    \subsubsection{Hauptteil}
+        \begin{compactitem}
+            \item Bearbeitung der in der Einleitung formulierten Leitfragen
+            anhand von Quellenmaterial
+            \item problemorientierte und analytische Auseinandersetzung 
+            mit dem Gegenstand
+            \item Auseinandersetzung mit der Sekundärliteratur, eigene 
+            Positionierung
+            \item Bearbeitung der in der Einleitung formulierten Leitfragen
+            anhand von Quellenmaterial
+            \item problemorientierte und analytische Auseinandersetzung 
+            mit dem Gegenstand
+            \item Auseinandersetzung mit der Sekundärliteratur, eigene 
+            Positionierung
+        \end{compactitem}
+
+    \subsubsection{Schluss}
+        \begin{compactitem}
+            \item auch \enquote{Fazit}, \enquote{Schlussbetrachtung} oder 
+            \enquote{Zusammenfassung}
+            \item Zusammenführung der in der Einleitung formulierten 
+            Leitfragen mit den im Hauptteil entwickelten Ergebnissen der Arbeit
+            \item Perspektiven für weitergehende Forschung
+            \item eigene Ausführungen an grundsätzliche Fragen anbinden
+        \end{compactitem}
+
+    \subsubsection{Literaturverzeichnis}
+        \begin{compactitem}
+            \item nur die Literatur, die auch wirklich zitiert wird
+            \item alphabetisch geordnet (Nachname HerausgeberIn/AutorIn)
+            \item korrekt! (Jahr, Seitenzahlen etc.)
+        \end{compactitem}
+
+    
+    \subsubsection{Anhang}
+        \begin{compactitem}
+            \item zusätzliche Statistiken / Tabellen
+            \item Quellcode oder Teile davon, Hinweis auf veröffentlichte 
+            Software, Datensätze, Korpora
+        \end{compactitem}
+        
+\section{Zitierhinweise (APA)}
+
+    \subsection{Zitationen im Text}
+        \begin{compactitem}
+            \item sinngemäßes, nicht wörtliches Zitat ohne 
+            Anführungsstriche, ohne \enquote{vgl.}
+            \item Quellenangabe vor dem Satzzeichen
+        \end{compactitem}
+        \zit{... ist ein Verfahren zur Satzgliedermittlung (Gross, 1990, S. 67)}
+    
+    \subsubsection{Kurzbelege (Einzelautor)}
+        \zit{... beschäftigt sich Saussure (1967) mit der Struktur ...}\\
+        \zit{... begründet damit den Strukturalismus (Saussure, 1967).}\\
+        \zit{Bereits 1952 nähert sich Glinz dem Problem ...}
+        
+    \subsubsection{Kurzbelege (mehrere Autoren)}
+        \begin{compactitem}
+            \item bei zwei Autoren beide zitieren
+            \item bei drei bis sechs Autoren beim ersten Mal alle zitieren, 
+            danach nur den ersten Autor und \enquote{et al.}
+            \item bei mehr als sechs Autoren nur den ersten Autoren zitieren 
+        \end{compactitem}
+        \zit{(Busch \& Stenschke, 2014)}\\
+        \zit{... wie Busch und Stenschke (2014) betonen ...}\\
+        \zit{(Carstensen, Ebert, Endriss, Jekat, Klabunde \& Langer, 2001)}\\
+        \zit{(Meibauer et al., 2014)}
+
+    \subsubsection{Mehrere Quellen}
+        \begin{compactitem}
+            \item bei mehrerern Quellen werden die verschiedenen Quellen 
+            durch ein Semikolon getrennt und alphabetisch sortiert 
+        \end{compactitem}
+        \zit{... wurde auf dieser Grundlage die Syntax der 
+        Konstituentengrammatik (Fries, 1952; Harris, 1951) entwickelt.}
+
+    \subsubsection{Wörtliche Zitate}
+        \begin{compactitem}
+            \item wörtliche Zitate sind wortgetreu wiederzugeben und in 
+            Anführungszeichen zu setzen
+            \item Angabe der Seitenzahl unabdingbar!
+        \end{compactitem}
+        \zit{... somit können \enquote{bedeutungsverwandte Ausdrücke
+        [...] auf ein und denselben Referenten angewandt werden} (Adamzik, 2001, S. 69).}
+
+        \begin{compactitem}
+            \item wörtliche Zitate von mehr als 40 Wörtern als eigenen 
+            Absatz ohne Anführungszeichen in Blocksatz (eingerückt)
+        \end{compactitem}
+        \zit{Meibauer et al. (2002) geben folgende Definition:}
+        \begin{quote}
+        \zit{
+        Unter einem Morphem versteht man im Allgemeinen ein einfaches sprachliches
+        Zeichen, das nicht mehr in kleinere Einheiten mit bestimmter Lautung 
+        und Bedeutung zerlegt werden kann. In diesem Sinne sind Wörter wie 
+        \textit{Haus, rot, auf} Morpheme. Morpheme darf man nicht mit 
+        Silben verwechseln. Silben haben keine eigene Bedeutung. (S. 29)
+        }
+        \end{quote}
+        
+\subsubsection{Sekundärquellen}
+        \begin{compactitem}
+            \item Sekundärquellen sollte die Ausnahme sein, immer besser
+            die Primärquelle konsultieren und zitieren
+            \item Quellen kennzeichnen
+            \item bei einem Sekundärzitat wird die Primärquelle nicht im
+            Literaturverzeichnis aufgelistet
+        \end{compactitem}
+        \zit{... und dass Wortbildungs-Morphologie nicht regulär 
+        sein kann, zeigen bereits Bar-Hillel und Shamir (1960, zitiert
+        nach Carstensen et al., 2001, S. 201).}
+
+    \subsection{Literaturverzeichnis}
+        \begin{compactitem}
+            \item alle (und nur die) verwendeten Materialien anführen 
+            \item alphabetisch geordnet, innerhalb chronologisch
+            \item nicht nach Quellentyp unterscheiden
+            \item Formatierung ohne Aufzählungszeichen mit hängendem Einzug
+            \item richtige und vollständige Angaben
+            \item Autor(en) und Autor(innen), Erscheinungsjahr, Titel, Erscheinungsangaben
+        \end{compactitem}
+
+    \subsubsection{Monographie}
+        \begin{compactitem}
+            \item Nachname, V. (Jahreszahl). \textit{Titel des Werkes}. Ort: Verlag. 
+            \item Zusatzinformationen zum Titel (wie z.B. Auflage oder Band)
+            hinter den Titel (nicht kursiv)
+        \end{compactitem}
+        \hangindent+2em \hangafter=1
+        \zit{Gross, H. (1990). \textit{Einführung in die germanistische Linguistik} (2. Aufl.). München: Iudicum-Verlag.}
+    
+    \subsubsection{Herausgeberwerk}
+        \hangindent+2em \hangafter=1
+        \zit{Busch, A. \& Wichter, S. (Hrsg.) (2000). \textit{Computerdiskurs und Wortschatz: 
+        Corpusanalysen und Auswahlbibliographie}. Frankfurt a.M.}
+
+    \subsubsection{Beitrag in einem Herausgeberwerk / Sammelband}
+        \hangindent+2em \hangafter=1
+        \zit{Grote, A. \& Schütte, D. (2000). \textit{Entlehnung und 
+        Wortbildung im Computerwortschatz - neue Wörter für eine neue Technologie}. 
+        In A. Busch \& S. Wichter (Hrsg.), \textit{Computerdiskurs und Wortschatz: 
+        Corpusanalysen und Auswahlbibliographie} (S.\,27-121). Frankfurt a.M.}
+
+    \subsubsection{Zeitschriftenartikel}
+        \begin{compactitem}
+            \item Nachname, V. (Jahr). Titel des Artikels. \textit{Titel der Zeitschrift}, Band(Heft), Seitenzahl.
+        \end{compactitem}
+        \zit{Knuth, D.\,E. (1968). Semantics of context-free
+        languages. \textit{Mathematical Systems Theory, 2}(2), 127-145.}
+        
+    \subsubsection{Dissertation}
+        \hangindent+2em \hangafter=1
+        \zit{Koehn, P. (2003). \textit{Noun Phrase Translation}. Ph.D. thesis, 
+        University of Southern California.}
+        
+        
+\section{Qualitätskriterien einer wissenschaftlichen Arbeit}
+
+    \subsection{Anforderungen an eine wissenschaftliche Arbeit}
+    \begin{compactitem}
+        \item behandelt ein eindeutiges Thema, eine klar formulierte 
+        Forschungsfrage
+        \item trifft über den untersuchten Gegenstand neue Aussagen, 
+        betrachtet das Untersuchungsobjekt mindestens aus einem neuen 
+        Blickwinkel
+        \item ist nützlich, erweitert den Wissens- bzw. Erkenntnisstand 
+        in dem zu untersuchenden Forschungsgebiet
+        \item ist intersubjektiv nachvollziehbar
+        \item zugrunde liegende Quellen müssen nachvollziehbar sein (also 
+        vollständig und korrekt aufgeführt)
+        \item der zugrunde liegende Forschungs-/Untersuchungsansatz muss
+        erkennbar und überprüfbar sein
+        \item die Arbeit muss theoriegeleitet sein
+        \item strebt allgemeingültige Aussagen an
+        \item erfüllt bestimmte Kriterien (Inhalt, Stil und Form betreffend)
+    \end{compactitem}
+  
+    \subsection{Inhalt}
+    \begin{compactitem}
+        \item Qualität und Relevanz des Themas
+        \item Ziel der Arbeit (Beschreibung, Prognose, ...)
+        \item Qualität und Quantität der recherchierten Literatur
+        \item Nutzung sonstiger Erkenntnisquellen (Daten aus Experimenten etc.)
+        \item Aufbau der Arbeit
+        \begin{compactitem}
+            \item Einleitung: Themenrelevanz, Ziel der Arbeit
+            \item Grundlagenteil: Stand des verfügbaren Wissens
+            \item Hauptteil: Hypothesenbildung, Konkretisierung von Aussagen, 
+            Ableitung von Konsequenzen, Analyse von Daten
+            \item Schluss: kritische Würdigung des eigenen Forschungsansatzes
+        \end{compactitem}
+    \end{compactitem}
+
+    \subsection{Stil}
+    \begin{compactitem}
+        \item Korrekte Verwendung von Wörtern
+        \begin{compactitem}
+            \item Verben: Ausdruck, Tempus, Modus, Aktivformulierungen
+            \item Substantive: keine Nominalkonstruktionen, keine Pleonasmen
+            \item Adjektive: Anzahl und Auswahl (sparsam verwenden)
+        \end{compactitem}
+        \item wissenschaftliche Diktion (z.B. Verwendung von Fachtermini)
+        \item Sprachlogik
+        \item Ästhetik der verwendeten Sprache (z.B. Wiederholungen vermeiden)
+        \item Prägnanz, Anschaulichkeit, Verständlichkeit (keine langen Schatelsätze)
+        \item Lebendigkeit der Präsentation: Wortwahl, Variabilität, Satzbau
+    \end{compactitem}
+
+    \subsection{Form}
+    \begin{compactitem}
+        \item Konsistenz der Gliederung (Kapitel/Unterkapitel)
+        \item Zitierweise (Prüfbarkeit der Aussagen)
+        \item Rechtschreibung, Grammatik, Zeichensetzung
+        \item Quellen im Literaturverzeichnis (vollständig, fehlerfrei, einheitlich, übersichtlich)
+        \item Qualität der Präsentation (Abbildungen, Formeln, Symbole)
+        \item Schriftsatz
+        \item Transparenz und Übersichtlichkeit (Absätze, Hervorhebungen (kursiv, fett), Aufzählungen)
+    \end{compactitem}
+    
+    \subsection{Anforderungen an wissenschaftliche Quellen}
+    \begin{compactitem}
+        \item die Quellen müssen dem Niveau einer wissenschaftlichen Arbeit entsprechen
+        \item Artikel aus allgemeinen Nachschlagewerken oder Zeitungen 
+        entsprechen wissenschaftlichen Ansprüchen eher selten
+        \item grundsätzlich werden für wissenschaftliche Arbeiten vor allem
+        Beiträge aus Fachzeitschriften / Sammelbänden herangezogen 
+        (wissenschaftlich, aktuell, qualitativ hochwertig)
+        \item zusätzlich können Monographien herangezogen werden 
+        (wissenschaftlich, weniger aktuell)
+    \end{compactitem}
+    
+\section{Grundsätze wissenschaftlicher Arbeiten}
+
+    \subsection{Originalität und Eigenständigkeit}
+    \begin{compactitem}
+        \item steigernde Anforderungen (Seminararbeit - Bachelorarbeit - Masterarbeit - Doktorarbeit)
+        \item fremden Gedankengängen und Inhalten vor dem Hintergrund 
+        eigener Erkenntnis einen \textit{eigenen} sprachlichen Ausdruck verleihen
+        \item fremde Gedanken zu Eigen machen durch Zitate und Verweise
+        \item kritische Wertung und Analyse
+    \end{compactitem}
+
+    \subsection{Recherche und Zitation}
+    \begin{compactitem}
+        \item korrekt und sorgfältig recherchieren und zitieren
+        \item es muss für den Leser unmißverständlich erkennbar sein, 
+        was an geistigem Eigentum übernommen wurde
+        \item wörtliche Entlehnungen als Zitat
+        \item gedankliche Entlehnungen als Verweis
+    \end{compactitem}
+
+    \subsection{Einflüsse}
+    \begin{compactitem}
+        \item ein objektiver Dritter muss beurteilen können, ob das 
+        wissenschaftliche Urteil vollständig unabhängig zustandegekommen ist
+        \item alle externen Faktoren offenlegen
+        \item Drittmittel, Stipendien , wirtschaftliche Vorteile kenntlich machen
+    \end{compactitem}
+
+    \subsection{Zuschreibung von Aussagen}
+    \begin{compactitem}
+        \item zitierten Autoren keine Aussagen unterstellen, die diese nicht 
+        gemacht haben
+        \item bei eigenen Übersetzungen fremdsprachlicher Quellen die 
+        Originalquelle benennen, auch Übersetzungen Dritter kenntlich machen
+        \item insbesondere bei \enquote{sinngemäßer Übersetzung} darauf achten, 
+        keine Aussagen zu unterstellen
+    \end{compactitem}
+ 
+    \subsection{Fachspezifisches Wissen}
+    \begin{compactitem}
+        \item tradiertes Allgemeinwissen einer Fachdisziplin muss nicht
+        durch Zitierungen nachgewiesen werden
+        \item was zu diesem Allgemeinwissen zählt, beurteilt die jeweilige
+        Fachdisziplin, im Zweifel die Institution, die die angestrebte 
+        Qualifikation bescheinigt (Dozent, Lehrstuhlinhaber, Dekanat)
+    \end{compactitem}
+
+    \subsection{Plagiate und Datenmanipulation}
+    \begin{compactitem}
+        \item die Übernahme fremden geistigen Eigentums ohne entsprechende
+        Kenntlichmachung stellt einen Verstoß gegen die Regeln korrekten 
+        wissenschaftlichen Arbeitens dar
+        \item dies gilt nicht nur für die wörtliche, sondern auch für die 
+        gedankliche Übernahme
+        \item die Manipulation von Daten ist ebenfalls ein Regelverstoß
+        \item Plagiate und Datenmanipulation sind im Regelfall 
+        prüfungsrelevante Täuschungsversuche
+    \end{compactitem}
+
+    \subsection{Eigene Arbeiten und Texte}
+    \begin{compactitem}
+        \item die Übernahme eigener Arbeiten und Texte verstößt dann gegen 
+        die Regeln wissenschaftlicher Praxis, wenn diese Übernahme in einer
+        Qualifikationsarbeit nicht belegt und zitiert wird
+        \item Prüfungsordnungen schließen die Wiederverwendung desselben oder 
+        ähnlicher Texte desselben Verfassers aus 
+    \end{compactitem}
+
+    \subsection{Mehrere Autoren}
+    \begin{compactitem}
+        \item das Ausgeben von Texten oder Textteilen Dritter - auch wenn 
+        der Autor sein Einverständnis gegeben hat (\textit{ghostwriting}) - als eigene Texte ist ein 
+        schwerwiegender Verstoß gegen die Regelen wissenschaftlicher Praxis 
+        (insbesondere bei Qualifikationsarbeiten)
+        \item bei gemeinsamen Arbeiten sind die jeweiligen Autoren kenntlich 
+        zu machen
+        \item Ehrenautorschaften oder Autorschaften kraft einer hierarchisch
+        übergeordneten Position ohne substantiellen Beitrag sind Fehlverhalten
+    \end{compactitem}
+
+    \subsection{Verantwortung}
+    \begin{compactitem}
+        \item die Verantwortung für die Einhaltung der Regeln wissenschaftlichen 
+        Arbeitens trägt in erster Linie der Verfasser
+        \item die Aufgabe des Betreuers oder Prüfers ist es, die Regeln 
+        wissenschaftlichen Arbeitens zu vermitteln und Zweifeln an der 
+        Einhaltung nachzugehen
+    \end{compactitem}
+
+\end{document}
