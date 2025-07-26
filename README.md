@@ -1,3 +1,4 @@
+<!-- TO DO: Namensgebung vereinheitlichen, Term Paper Template überarbeiten, HA_hinweise als pdf zur Verfügung stellen -->
 # 🎓 written assignment
 
 This repository contains a guideline and template for written assignments  
