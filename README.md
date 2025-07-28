@@ -11,8 +11,8 @@ at the Department of Computational Linguistics, Trier University.
 | File | Description |
 |------|-------------|
 | [HA_hinweise.tex](HA_hinweise.tex) | Guideline to writing your assignment |
-| [Template__Term_Paper.pdf](Template__Term_Paper.pdf) | Template for written assignments (pdf) |
-| [Template-TermPaper.zip](Template-TermPaper.zip) | Template for written assignments (zip) --> latex |
+| [CL_Template_Thesis.zip](CL_Template_Thesis.pdf) | tex-Template for your written assignment |
+| [CL_Template_Thesis.pdf](CL_Template_Thesis.pdf) | pdf version of the template |
 | [Eigenstaendigkeitserklaerung.pdf](Eigenstaendigkeitserklaerung.pdf) | Declaration of authorship (German) |
 | [Eigenstaendigkeitserklaerung_Englisch.pdf](Eigenstaendigkeitserklaerung_Englisch.pdf) | Declaration of authorship (English) |
 
