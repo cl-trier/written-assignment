@@ -30,7 +30,7 @@ Bachelor:
 Master:
 - written assignment (Schriftliche Ausarbeitung): 7 +/- 2 pages
 - term papers (Hausarbeiten): 10 +/- 3 pages
-- thesis (Abschlussarbeit: 60 +/- 30 pages
+- thesis (Abschlussarbeit): 60 +/- 30 pages
 
 Please note that the individual length of a written paper must always be agreed with the supervisor(s).
 
